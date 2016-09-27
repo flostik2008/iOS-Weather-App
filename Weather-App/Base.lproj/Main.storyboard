@@ -83,53 +83,44 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EbI-nc-JhW">
                                 <frame key="frameInset" minY="301" width="375" height="366"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.79638077501438254" green="0.79665464743589742" blue="0.79005000008038728" alpha="0.49377693965517239" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="kya-7S-W6h">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="kya-7S-W6h" customClass="TableCell" customModule="Weather_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="kya-7S-W6h" id="64R-TC-IBM">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kya-7S-W6h" id="64R-TC-IBM">
                                             <frame key="frameInset" width="375" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r3b-vs-5vr">
-                                                    <frame key="frameInset" width="1000" height="1000"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="50" id="C9L-pd-TFn"/>
-                                                        <constraint firstAttribute="width" constant="50" id="Rzn-B7-5z0"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nDm-Qd-DGj">
-                                                    <frame key="frameInset" minX="75" minY="19" width="272" height="42"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nDm-Qd-DGj">
+                                                    <frame key="frameInset" minX="75" minY="19" width="284" height="44"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="L6V-g4-gqr">
-                                                            <frame key="frameInset" width="136" height="42"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="L6V-g4-gqr">
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Wednesday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xy3-z0-Dxj">
-                                                                    <frame key="frameInset" width="136" height="22"/>
+                                                                    <frame key="frameInset" width="142" height="24"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                                     <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cloudy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9O-KT-Bwa">
-                                                                    <frame key="frameInset" minY="22" width="136" height="20"/>
+                                                                    <frame key="frameInset" minY="24" width="142" height="20"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                                     <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eYx-y0-GhD">
-                                                            <frame key="frameInset" minX="136" width="136" height="42"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eYx-y0-GhD">
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="15.0℃" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Toj-pI-ZGn">
-                                                                    <frame key="frameInset" width="136" height="22"/>
+                                                                    <frame key="frameInset" width="142" height="24"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                                     <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="16.0℃" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFu-3X-c5w">
-                                                                    <frame key="frameInset" minY="22" width="136" height="20"/>
+                                                                    <frame key="frameInset" minY="24" width="142" height="20"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                                     <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -138,20 +129,33 @@
                                                         </stackView>
                                                     </subviews>
                                                 </stackView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Thunderstorm" translatesAutoresizingMaskIntoConstraints="NO" id="r3b-vs-5vr">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="65" id="k0j-eI-6cD"/>
+                                                        <constraint firstAttribute="height" constant="65" id="zAG-6l-OYz"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.9334556352643153" green="0.95198317307692304" blue="0.94190825622405006" alpha="0.49377693965517239" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.7337150669264132" green="0.75016025641025641" blue="0.74287913473933909" alpha="0.49377693965517239" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstItem="r3b-vs-5vr" firstAttribute="top" secondItem="64R-TC-IBM" secondAttribute="topMargin" constant="6" id="1vC-AO-T93"/>
-                                                <constraint firstItem="r3b-vs-5vr" firstAttribute="leading" secondItem="64R-TC-IBM" secondAttribute="leadingMargin" constant="9" id="5iK-v1-eis"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="nDm-Qd-DGj" secondAttribute="trailing" constant="20" id="JQ0-aJ-D3P"/>
+                                                <constraint firstItem="nDm-Qd-DGj" firstAttribute="leading" secondItem="r3b-vs-5vr" secondAttribute="trailing" constant="5" id="0rb-MD-ugf"/>
+                                                <constraint firstItem="r3b-vs-5vr" firstAttribute="top" secondItem="64R-TC-IBM" secondAttribute="top" constant="8" id="30N-F8-v01"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="nDm-Qd-DGj" secondAttribute="trailing" constant="8" id="4UZ-aa-QVw"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="nDm-Qd-DGj" secondAttribute="bottom" constant="10" id="OFW-Tn-BJo"/>
-                                                <constraint firstItem="nDm-Qd-DGj" firstAttribute="leading" secondItem="r3b-vs-5vr" secondAttribute="trailing" constant="8" id="X2q-ed-lM3"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="r3b-vs-5vr" secondAttribute="bottom" constant="7" id="ank-Zb-2Q1"/>
-                                                <constraint firstItem="nDm-Qd-DGj" firstAttribute="centerY" secondItem="r3b-vs-5vr" secondAttribute="centerY" id="cfE-WW-XcL"/>
+                                                <constraint firstItem="r3b-vs-5vr" firstAttribute="leading" secondItem="64R-TC-IBM" secondAttribute="leading" constant="5" id="dRj-EU-JK0"/>
+                                                <constraint firstAttribute="bottom" secondItem="r3b-vs-5vr" secondAttribute="bottom" constant="7" id="r8z-x4-0Q7"/>
+                                                <constraint firstItem="r3b-vs-5vr" firstAttribute="centerY" secondItem="64R-TC-IBM" secondAttribute="centerY" id="uBH-mv-UUm"/>
                                                 <constraint firstItem="nDm-Qd-DGj" firstAttribute="top" secondItem="64R-TC-IBM" secondAttribute="topMargin" constant="10" id="ywF-HF-cyq"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="dayLabel" destination="xy3-z0-Dxj" id="36h-Qw-NqK"/>
+                                            <outlet property="highTemp" destination="Toj-pI-ZGn" id="zoh-7p-giE"/>
+                                            <outlet property="lowTemp" destination="AFu-3X-c5w" id="2Iv-Hc-A6j"/>
+                                            <outlet property="weatherIcon" destination="r3b-vs-5vr" id="QCw-yC-jQP"/>
+                                            <outlet property="weatherType" destination="q9O-KT-Bwa" id="jv7-bh-sZK"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -181,4 +185,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="116.49175412293854"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Thunderstorm" width="92" height="113"/>
+    </resources>
 </document>
